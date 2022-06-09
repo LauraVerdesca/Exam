@@ -1,6 +1,5 @@
 """PART 1"""
 import pandas as pd
-import csv
 from part_2 import *
 
 
@@ -11,7 +10,6 @@ class Registry():
 		self.__operations = ["Get the numerical metadata of the two files: number of rows and columns",
                            "Record the general semantics, hence the labels of the columns",
                            "Get the number of different genes from the first file",
-                            #"Get the list of all the genes",
                            "Get the number of different diseases from the second file",
                            "Given a gene symbol, give the list of associations with Covid19",
                            "Given a disease name, give the list of associations with Covid19",
@@ -38,7 +36,7 @@ class Registry():
 	def link_prefour(self):
 		return Pre4(self.__data2).list_gen()
 
-	def link_geneSent(self): # class 4 # INPUT!!!!
+	def link_geneSent(self): # class 4 
 		return SentencesG(self.__data2)
 
 	def link_diseaseNum(self): # class 5
@@ -47,17 +45,16 @@ class Registry():
 	def link_presixth(self):
 		return Pre6(self.__data1).list_dis()
 
-	def link_disSent(self): # class 6 #INPUT!!!!
+	def link_disSent(self): # class 6 
 		return SentencesD(self.__data1)
 
 	def link_top10(self): # class 7
 		return TopTen(self.__data1, self.__data2).general_association()
 
-	def link_get_geneDisease(self): # class 8 #INPUT!!!
+	def link_get_geneDisease(self): # class 8 
 		return AssociationDisease(self.__data1)
 
-	def link_get_DiseaseGene(self): # class 9 #INPUT!!!
+	def link_get_DiseaseGene(self): # class 9 
 		return AssociationGenes(self.__data2)
 
-# per gli input, possiamo creare delle variabili da mettere nel registry tipo a = "gene_choice.html"
-# e poi nella funzione richiamare quel valore
+
