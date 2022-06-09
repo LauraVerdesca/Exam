@@ -74,7 +74,7 @@ class SentencesG:
     
 	def __init__(self, data2):
 		self.__data = data2
-		#self.__id = geneID
+		
 
 	def search_covid(self, gene_id):
 		sliced_data2 = self.__data.loc[self.__data['gene_symbol'] == gene_id]
@@ -98,9 +98,7 @@ class Diseases:
 		for column in self.__data.columns[4:5]:
 			disease_symbol = list(self.__data[column]) #extracting fifth column
 
-		occurrences = collections.Counter(disease_symbol)
-        
-		return occurrences
+		
 		disease = {}
 		for el in disease_symbol:
 			if el not in disease.keys():
@@ -154,31 +152,27 @@ class TopTen:
 		self.__data2 = data2
 
 	def general_association(self):
-		id_genes = self.__data2['gene_symbol']
-		list_genes_id = id_genes.drop_duplicates().tolist() # list of all the different diseases_id
+		genes_symbol = self.__data2['gene_symbol']
+		list_genes = genes_symbol.drop_duplicates().tolist() # list of all the different genes
 
 
 		dict_association = {}
-		list_tr = []
-
+		
 		col2 = self.__data1['sentence'].tolist() # "sentence" column in data1
 
-		for idd in list_genes_id:
+		for idd in list_genes:
 			for row in col2:
 				if idd in row:
 					index = col2.index(row)
 					disease_name = self.__data1.loc[index]['disease_name'] # associated gene_symbol
 
 					association = (idd, disease_name) # association (gene_id, disease_id )= key name
-					list_tr.append(association)
-					print(list_tr)
-		print(list_tr)
-		for el in list_tr:            
-			if el in dict_association.keys(): # new association
-				dict_association[association] += 1
-			else:                                       # association already present
-				dict_association[association] = 1
-
+					
+					if association not in dict_association.keys():
+						dict_association[association] = 1  # if association is not present, create it
+					else:
+						dict_association[association] += 1
+					
 		sorted_dict = sorted(dict_association.items(), key=lambda kv: kv[1], reverse=True)
 		print(sorted_dict)
 		top10 = list(sorted_dict)[0:9]
@@ -187,7 +181,7 @@ class TopTen:
 
 #class_8
 class AssociationDisease:
-     """ This class will return a list of diseases that are associated to the given gene by its symbol """
+     """ This class will return a list of diseases that are associated to the given gene by its symbol. """
 
 	def __init__(self, data1):
 		self.__data = data1
@@ -200,19 +194,17 @@ class AssociationDisease:
 			if gene_symbol in row:
 				index_row = col_sentence.index(row)
 				disease_symbol = self.__data.loc[index_row]['disease_name']
-				if disease_symbol not in final_list:
+				
+				if disease_symbol not in final_list: # to avoid repetitions 
 					final_list.append(disease_symbol)
-				elif disease_symbol == "COVID19" or disease_symbol == "SARS-CoV2" or disease_symbol == "covid" or disease_symbol == "coronavirus" and disease_symbol in covid_list:
-					pass
-
-
+				
 		return final_list
 
 
 
 #class_9
 class AssociationGenes:
-    """ This class will return a list of the genes associated to the given disease by its name """
+    """ This class will return a list of the genes associated to the given disease by its name. """
 
 	def __init__(self, data2):
 		self.__data = data2
@@ -225,7 +217,8 @@ class AssociationGenes:
 			if disease_id in row:
 				index_row = col_sentence.index(row)
 				gene_symbol = self.__data.loc[index_row]['gene_symbol']
-				if gene_symbol not in final_list:
+				
+				if gene_symbol not in final_list: # to avoid repetitions
 					final_list.append(gene_symbol)
 
 		return final_list
