@@ -30,7 +30,7 @@ The three parts will analyze the DisGeNET COVID-19 data collection. The *.tsv* f
 -   *[gene_evidences.tsv](https://github.com/anuzzolese/genomics-unibo/blob/master/2020-2021/project/dataset/gene_evidences.tsv.gz)*
 
 ## Libraries
-Several libraries had been used:
+Several libraries have been used:
 ```python
 import pandas as pd
 import csv
