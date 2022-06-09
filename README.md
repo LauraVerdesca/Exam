@@ -38,9 +38,12 @@ from flask import Flask, render_template, request
 ```
 
 In order to run the program, make sure to have them installed. If not, we have provided some tutorials to do so:
-- Installing [Flask](https://phoenixnap.com/kb/install-flask);
-- Installing [pandas](https://pandas.pydata.org/docs/getting_started/install.html);
-- Installing [csv](https://pypi.org/project/python-csv/).
+- Installing *[Flask](https://phoenixnap.com/kb/install-flask)*;
+- Installing *[pandas](https://pandas.pydata.org/docs/getting_started/install.html)*;
+- Installing *[csv](https://pypi.org/project/python-csv/)*.
+
+## HTML page
+Once running the code, the web page will be available at the following <ins>*[link](http://127.0.0.1:3000/main)*</ins>.
 
 ## Authors
 ***Corona** Gaia, **Storari** Samuele, **Verdesca** Laura Claudia.*
