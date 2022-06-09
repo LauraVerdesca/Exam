@@ -29,5 +29,18 @@ The three parts will analyze the DisGeNET COVID-19 data collection. The *.tsv* f
 -   *[disease_evidences.tsv](https://github.com/anuzzolese/genomics-unibo/blob/master/2020-2021/project/dataset/disease_evidences.tsv.gz)*
 -   *[gene_evidences.tsv](https://github.com/anuzzolese/genomics-unibo/blob/master/2020-2021/project/dataset/gene_evidences.tsv.gz)*
 
+## Libraries
+Several libraries had been used:
+```python
+import pandas as pd
+import csv
+from flask import Flask, render_template, request
+```
+
+In order to run the program, make sure to have them installed. If not, we have provided some tutorials to do so:
+- Installing [Flask](https://phoenixnap.com/kb/install-flask);
+- Installing [pandas](https://pandas.pydata.org/docs/getting_started/install.html);
+- Installing [csv](https://pypi.org/project/python-csv/).
+
 ## Authors
 ***Corona** Gaia, **Storari** Samuele, **Verdesca** Laura Claudia.*
