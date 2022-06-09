@@ -1,0 +1,23 @@
+<html>
+<head>
+        <meta charset="UTF-8">
+        <title>Fifth Operation: Number of diseases</title>
+    </head>
+    <body>
+        <h4>Recording the number of different disease detected in literature.<br><br/>
+        The list should be sorted in ascending order.</h4>
+        <p><p/>
+        <p>The number of different diseases in the disease_evidence.csv dataset is:  </p>
+        <p>They are: </p>
+        <ul>
+        {% for el in result %}
+        <li>{{el}}</li>
+        <p></p>
+        {% endfor %}
+        </ul>
+      
+        <form method="get" action="/main">
+            <button type="submit">Back</button>
+        </form>
+    </body>
+</html>

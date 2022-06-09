@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Third Operation: Genes Number </title>
+    </head>
+    <body>
+        <h3> In this page you will see which and how many genes are taken in consideration.</h3>
+        <br/><br/>
+        <p>They are: </p>
+        <ul>
+        {% for el in result %}
+        <li>{{el}}</li>
+        <p></p>
+        {% endfor %}
+        </ul>
+        
+        <form method="get" action="/main">
+                <button type="submit">Back</button>
+        </form>
+    </body>
+</html>

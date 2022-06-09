@@ -1,0 +1,16 @@
+<html>
+    <h3>Given the selected gene symbol, this is the list of sentences
+    that are an evidence in literature about the relation of this gene with COVID-19.</h3>
+    <ul>
+    {% for sentence in result %}
+    <li>{{sentence}}</li>
+    <p></p>
+    {% endfor %}
+    </ul>
+    <form method="get" action="/main">
+        <button type="submit">Main</button>
+    </form>
+    <form method="get" action="/P4">
+        <button type="submit">Back</button>
+    </form>
+</html>

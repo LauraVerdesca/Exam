@@ -1,0 +1,15 @@
+<html>
+    <h3>Given the selected gene symbol, this is the list of diseases that are associated to that gene </h3>
+    <ul>
+    {% for sentence in result %}
+    <li>{{sentence}}</li>
+    <p></p>
+    {% endfor %}
+    </ul>
+    <form method="get" action="/main">
+        <button type="submit">Main</button>
+    </form>
+    <form method="get" action="/P8">
+        <button type="submit">Back</button>
+    </form>
+</html>
