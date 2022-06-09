@@ -25,7 +25,7 @@ Moreover, a folder with several <ins>templates</ins> is present: it is used in o
 Finally, <ins>UML diagrams</ins> and <ins>CRC cards</ins> are provided, in order to better understand the classes structures.
 
 ## Data
-The three parts will analyze the DisGeNET COVID-19 data collection. The *.tsv* files can be downloades clicking onto the following links:
+The three parts will analyze the DisGeNET COVID-19 data collection. The *.tsv* files can be downloaded clicking onto the following links:
 -   *[disease_evidences.tsv](https://github.com/anuzzolese/genomics-unibo/blob/master/2020-2021/project/dataset/disease_evidences.tsv.gz)*
 -   *[gene_evidences.tsv](https://github.com/anuzzolese/genomics-unibo/blob/master/2020-2021/project/dataset/gene_evidences.tsv.gz)*
 
