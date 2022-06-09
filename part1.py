@@ -1,7 +1,7 @@
 """PART 1"""
 import pandas as pd
 import csv
-from part2 import *
+from part 2 import *
 
 
 class Registry():
