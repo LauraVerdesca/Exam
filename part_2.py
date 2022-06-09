@@ -56,7 +56,7 @@ class Genes:
 
 # class pre 4
 class Pre4:
-    """The class Pre4 lists all of the genes present in the file gene_evidences"""
+    """The class Pre4 lists all of the genes present in the file gene_evidences."""
 
 	def __init__(self,data2):
 		self.__data = data2
@@ -112,7 +112,7 @@ class Diseases:
 
 #class pre 6
 class Pre6:
-    """The class Pre6 lists all of the diseases present in the file disease_evidences"""
+    """The class Pre6 lists all of the diseases present in the file disease_evidences."""
 
 	def __init__(self,data1):
 		self.__data = data1
