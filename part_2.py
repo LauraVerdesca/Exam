@@ -76,8 +76,8 @@ class SentencesG:
 		self.__data = data2
 		
 
-	def search_covid(self, gene_id):
-		sliced_data2 = self.__data.loc[self.__data['gene_symbol'] == gene_id]
+	def search_covid(self, gene_symbol):
+		sliced_data2 = self.__data.loc[self.__data['gene_symbol'] == gene_symbol]
 		covid_list = []
 		sentences_col = sliced_data2['sentence'].tolist()
 		for sentence in sentences_col:
