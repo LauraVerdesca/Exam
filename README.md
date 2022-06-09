@@ -1,7 +1,8 @@
 # Project
-###### Advanced Programming 2021/2022
+##### Advanced Programming 2021/2022
 ![Alt description of image](https://www.cloverdx.com/hubfs/david-clode-PsqJlaAlvXk-unsplash__1618841662_5.81.219.59.jpg) 
 
+## Specification
 The project consists in a three *.py* files, each one containing a different part:
 1. ***part_1.py*** consists in a program able to: 
    * Read the files;
@@ -19,9 +20,14 @@ The project consists in a three *.py* files, each one containing a different par
    * Given a disease name or its ID, provide the list of genes such a disease is associated with.
 3. ***part_3.py*** consists in a program which implements the Web-based user interface (UI).
 
-You can find the .tsv files clicking onto the following links:
+Moreover, a folder with several <ins>templates</ins> is present: it is used in order to implement the file ***part_3.py*** to create an HTML web page.
+
+Finally, <ins>UML diagrams</ins> and <ins>CRC cards</ins> are provided, in order to better understand the classes structures.
+
+## Data
+The three parts will analyze the DisGeNET COVID-19 data collection. The *.tsv* files can be downloades clicking onto the following links:
 -   *[disease_evidences.tsv](https://github.com/anuzzolese/genomics-unibo/blob/master/2020-2021/project/dataset/disease_evidences.tsv.gz)*
 -   *[gene_evidences.tsv](https://github.com/anuzzolese/genomics-unibo/blob/master/2020-2021/project/dataset/gene_evidences.tsv.gz)*
 
-### Authors
+## Authors
 ***Corona** Gaia, **Storari** Samuele, **Verdesca** Laura Claudia.*
