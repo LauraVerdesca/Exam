@@ -48,7 +48,7 @@ In order to run the program, make sure to have them installed. If not, we have p
 - Installing *[csv](https://pypi.org/project/python-csv/)*.
 
 ## HTML page
-Once running the code, the web page will be available at the following <ins>*[link](http://127.0.0.1:3000/main)*</ins>.
+Once running the code, the homepage will be available at the following <ins>*[link](http://127.0.0.1:3000/main)*</ins>.
 
 ## Authors
 ***Corona** Gaia, **Storari** Samuele, **Verdesca** Laura Claudia.*
