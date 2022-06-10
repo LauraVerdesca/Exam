@@ -20,8 +20,6 @@ The project consists in a three *.py* files, each one containing a different par
    * Given a gene symbol, provide the list of diseases such a gene is associated with;
    * Given a disease name, provide the list of genes such a disease is associated with.
    
-   This part of the project has been done by using *Pandas*, which is a fast, powerful, flexible open source data analysis and manipulation tool.
-   Also in _part_1.py_ it has been used in order to open the two files; in this way they have been transformed in two **data frames**, manipulated with the functions of Pandas.
    
 3. ***part_3.py*** consists in a program which implements the Web-based user interface (UI).
 
@@ -44,15 +42,13 @@ The three parts will analyze the DisGeNET COVID-19 data collection. The *.tsv* f
 ## Libraries
 Several libraries have been used:
 ```python
-import csv
 import pandas as pd
 from flask import Flask, render_template, request
 ```
 
 In order to run the program, make sure to have them installed. If not, we have provided some tutorials to do so:
 - Installing *[Flask](https://phoenixnap.com/kb/install-flask)*;
-- Installing *[pandas](https://pandas.pydata.org/docs/getting_started/install.html)*;
-- Installing *[csv](https://pypi.org/project/python-csv/)*.
+- Installing *[pandas](https://pandas.pydata.org/docs/getting_started/install.html)*.
 
 ## HTML page
 Once running the code, the homepage will be available at the following <ins>*[link](http://127.0.0.1:3000/main)*</ins>.
