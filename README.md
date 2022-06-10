@@ -2,7 +2,7 @@
 ##### Advanced Programming 2021/2022
 ![Alt description of image](https://www.cloverdx.com/hubfs/david-clode-PsqJlaAlvXk-unsplash__1618841662_5.81.219.59.jpg) 
 
-## Specification
+## Project specification
 The project consists in a three *.py* files, each one containing a different parts:
 1. ***part_1.py*** consists in a program able to: 
    * Read the files;
@@ -46,6 +46,22 @@ In order to run the program, make sure to have them installed. If not, we have p
 - Installing *[Flask](https://phoenixnap.com/kb/install-flask)*;
 - Installing *[pandas](https://pandas.pydata.org/docs/getting_started/install.html)*;
 - Installing *[csv](https://pypi.org/project/python-csv/)*.
+
+## Classes specification
+Each part has it's own classes, as stated before. In details:
+- ***part_1.py*** is connected with *part_2.py* since it imports it. Furthermore, it contains only one class, called <ins>*Registry*</ins>, which aims to contain all the functions calling analytical operations defined in *part_2.py* file;
+- ***part_2.py*** contains eleven classes:
+  * <ins>Metadata</ins>:;
+  * <ins>Semantics</ins>:;
+  * <ins>Genes</ins>:;
+  * <ins>Pre4</ins>:;
+  * <ins>SentencesG</ins>:;
+  * <ins>Diseases</ins>:;
+  * <ins>Pre6</ins>:;
+  * <ins>SentencesD</ins>:;
+  * <ins>Top10</ins>:;
+  * <ins>AssociationDisease</ins>:;
+  * <ins>AssociationGenes</ins>:;
 
 ## HTML page
 Once running the code, the homepage will be available at the following <ins>*[link](http://127.0.0.1:3000/main)*</ins>.
