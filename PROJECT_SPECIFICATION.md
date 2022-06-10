@@ -14,18 +14,18 @@ Each part has it's own classes, as stated before. In details:
   * <ins>*AssociationDisease*</ins>:;
   * <ins>*AssociationGenes*</ins>:;
 - ***part_3*** is connected with *part_1.py* since it imports it. Furthermore, it contains several *@app_route* decorators which intend to map the URLs to a specific function that will handle the logic for that URL. It will create fourteen pages:
-  * */main*:;
-  * */MD*:;
-  * */Sem*:;
-  * */G*:;
-  * */P4*:;
-  * */SenG*:;
-  * */D*:;
-  * */P6*:;
-  * */SenD*:;
-  * */T10*:;
-  * */P8*:;
-  * */AD*:;
-  * */P9*:;
-  * */AG*:;
+  * */main*: shows the nine possible choices the user can select;
+  * */MD*: shows;
+  * */Sem*: shows;
+  * */G*: shows;
+  * */P4*: shows;
+  * */SenG*: shows;
+  * */D*: shows;
+  * */P6*: shows;
+  * */SenD*: shows;
+  * */T10*: shows;
+  * */P8*: shows;
+  * */AD*: shows;
+  * */P9*: shows;
+  * */AG*: shows;
 - ***templates*** folder contains fourteen *.html* files
