@@ -13,7 +13,7 @@ Each part has it's own classes, as stated before. In details:
   * <ins>*Top10*</ins>: it is involved in returning the 10 most abundant associations between genes and diseases;
   * <ins>*AssociationDisease*</ins>: it is involved in returning a list of diseases that are associated to the given gene by its symbol;
   * <ins>*AssociationGenes*</ins>: it is involved in returning a list of the genes associated to the given disease by its name.
-- ***part_3*** is connected with *part_1.py* since it imports it. Furthermore, it contains several *@app_route* decorators which intend to map the URLs to a specific function that will handle the logic for that URL. It will create fourteen pages:
+- ***part_3.py*** is connected with *part_1.py* since it imports it. Furthermore, it contains several *@app_route* decorators which intend to map the URLs to a specific function that will handle the logic for that URL. It will create fourteen pages:
   * */main*: shows the nine possible choices the user can select;
   * */MD*: shows the output of *Metadata* class;
   * */Sem*: shows the output of *Semantics* class;
