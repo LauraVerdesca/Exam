@@ -19,11 +19,11 @@ Each part has it's own classes, as stated before. In details:
   * */Sem*: shows the output of *Semantics* class;
   * */G*: shows the output of *Genes* class;
   * */P4*: shows ;
-  * */SenG*: shows;
-  * */D*: shows;
+  * */SenG*: shows ;
+  * */D*: shows the output of *Diseases* class;
   * */P6*: shows;
   * */SenD*: shows;
-  * */T10*: shows;
+  * */T10*: shows the output of *Top10* class;
   * */P8*: shows;
   * */AD*: shows;
   * */P9*: shows;
