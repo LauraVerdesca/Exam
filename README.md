@@ -25,9 +25,16 @@ The project consists in a three *.py* files, each one containing a different par
    
 3. ***part_3.py*** consists in a program which implements the Web-based user interface (UI).
 
-Moreover, a folder with several <ins>templates</ins> is present: it is used in order to implement the file ***part_3.py*** to create an HTML web page.
 
-Finally, <ins>UML diagrams</ins> and <ins>CRC cards</ins> are provided, in order to better understand the classes structures.
+## CRC Cards
+This folder provides images for each class built in _part_2.py_.
+
+## UML diagrams
+- _Class Diagram1.jpg_ is an image representing the UML diagram created with **Visual Paradigm**.
+- _classes_UML.vpp_ is the equivalent of Class Diagram1.jpg but in format _.vpp_.
+
+## Templates 
+It is a folder with severa <ins>templates</ins> used in order to implement the file ***part_3.py*** to create an HTML web page.
 
 ## Data
 The three parts will analyze the DisGeNET COVID-19 data collection. The *.tsv* files can be downloaded clicking onto the following links:
