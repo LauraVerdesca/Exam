@@ -20,12 +20,11 @@ The project consists in a three *.py* files, each one containing a different par
    * Given a gene symbol, provide the list of diseases such a gene is associated with;
    * Given a disease name, provide the list of genes such a disease is associated with.
    
-   
 3. ***part_3.py*** consists in a program which implements the Web-based user interface (UI).
 
 
 ## CRC Cards
-This folder provides images for each class built in _part_2.py_.
+We have provided a folder with images explaining each class built in _part_2.py_.
 
 ## UML diagrams
 - _Class Diagram1.jpg_ is an image representing the UML diagram created with **Visual Paradigm**.
