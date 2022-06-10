@@ -75,7 +75,7 @@ A specific Pandas function is used: **.shape** returns a tuple(n. rows, n. cols)
   * <ins>*Semantics*</ins>: 
 With this class the labels of the columns for each file are obtained. Also in this case a Pandas function is used, always because the two files are opened as two dataframes. The function is: **.columns.values** and the result is transformed into a list;
 
-  * <ins>*Genes*</ins>: 
+  * <ins>*Genes*</ins>: <br/>
 _Genes_ class is involved in finding all the different genes in the _gene_evidences.tsv_ file and how many times each one is present.
 A _gene_symbol_ list is created by exctraction of the corresponding column from the file. The dictionary is the final output where, after iteration on the list, the key is the gene and the value is the counter (hence how many time the specific gene was counted inside the list, so how many times is present in the file);
 
