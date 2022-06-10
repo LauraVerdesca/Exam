@@ -27,7 +27,7 @@ The project consists in a three *.py* files, each one containing a different par
 We have provided a folder with CRC cards explaining each class built in _part_2.py_.
 
 ## UML diagrams
-We have provided a folder with an UML diagram explaining the 
+We have provided a folder with an UML diagram explaining the connections between the classes built in _part_2.py_:
 - _Class Diagram1.jpg_ is an image representing the UML diagram created with **Visual Paradigm**.
 - _classes_UML.vpp_ is the equivalent of _Class Diagram1.jpg_ but in format _.vpp_.
 
