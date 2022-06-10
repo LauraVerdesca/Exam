@@ -60,9 +60,9 @@ It has only one class, called <ins>*Registry*</ins>, which aims to contain all t
 
 The files are opened through **Pandas**: in this way they are transformed in two dataframes, easily manipulated through the functions of the previously mentioned library. 
 
-* In lines <ins>10-18</ins> there is the listing of all the operations that have to be carried out.
-* Line <ins>19</ins> lists all the acronyms associated to the classes of _part_2.py_. They will be needed for _part_3.py_ and for this reason they are returned in lines <ins>24-25</ins>.
-* Each function from line <ins>27</ins> to <ins>58</ins> is associated to a specififc operation, in fact each one returns the result of the its correspective class from _part_2.py_.
+  * In lines <ins>10-18</ins> there is the listing of all the operations that have to be carried out.
+  * Line <ins>19</ins> lists all the acronyms associated to the classes of _part_2.py_. They will be needed for _part_3.py_ and for this reason they are returned in lines <ins>24-25</ins>.
+  * Each function from line <ins>27</ins> to <ins>58</ins> is associated to a specififc operation, in fact each one returns the result of the its correspective class from _part_2.py_.
  
 - ***part_2.py*** contains eleven classes:
   * <ins>*Metadata*</ins>: it is involved in getting general info about the dataframes, which are the number of rows and columns of each file;
