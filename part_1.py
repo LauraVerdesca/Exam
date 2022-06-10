@@ -3,7 +3,7 @@ import pandas as pd
 from part_2 import *
 
 
-class Registry():
+class Registry:
 	def __init__(self):
 		self.__data1 = pd.read_csv('disease_evidences.tsv', delimiter="\t")
 		self.__data2 = pd.read_csv('gene_evidences.tsv', delimiter="\t")
