@@ -126,7 +126,7 @@ class Pre6:
 #class_6
 class SentencesD:
      """ The class Sentences D gives the list of all sentences associated to Covid and 
-    the specific given disease. """
+    the given disease. """
 
 	def __init__(self, data1):
 		self.__data = data1
@@ -204,7 +204,7 @@ class AssociationDisease:
 
 #class_9
 class AssociationGenes:
-    """ This class will return a list of the genes associated to the given disease by its name. """
+    """ This class will return a list of the genes associated to the given disease by its ID. """
 
 	def __init__(self, data2):
 		self.__data = data2
