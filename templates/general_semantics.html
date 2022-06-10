@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html style="background-color: #D2FFF8;">
+            <head>
+                <meta charset="UTF-8">
+                <style>
+                    .under {text-decoration: underline #151415;}
+                    .button {
+                        display: inline-block;
+                        padding: 5px 10px;
+                        font-size: 20px;
+                        cursor: pointer;
+                        text-align: center;
+                        text-decoration: none;
+                        outline: none;
+                        color: #fff;
+                        background-color: #29CDB4;
+                        border: none;
+                        border-radius: 15px;
+                        box-shadow: 0 9px #999;
+                        }
+                    .button:hover {background-color: #3e8e41}
+                    .button:active {
+                        background-color: #3e8e41;
+                        box-shadow: 0 5px #666;
+                        transform: translateY(4px);
+                </style>
+            </head>
+            <body>
+                <center><font class="under" face="Garamond" size="5" style="color:#151415;">Second Operation: you will see the labels of the files.</font></center><br/>
+                <center><font face="Garamond" size="4" style="color:#151415;">The labels are actually the names of the columns of the two dataframes</font></center><br></br>
+    <li><font face="Garamond" size="4" style="color:#151415;">The general semantics of the gene_evidences.tsv dataset is {{result[1]}}</font></br></li>
+    <li><font face="Garamond" size="4" style="color:#151415;">The general semantics of the disease_evidences.tsv dataset is {{result[0]}}</font></br></li></br>
+
+    
+    <form method="get" action="/main">
+        <button class="button" type="submit">Back</button>
+    </form>
+          
+<br></br>
+<center><footer>
+  <p>Powered by Corona Gaia, Storari Samuele and Verdesca Laura Claudia</p>
+</footer></center>
+
+</body>
+</html>
