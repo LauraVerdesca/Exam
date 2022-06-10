@@ -37,6 +37,7 @@ The three parts will analyze the DisGeNET COVID-19 data collection. The *.tsv* f
 ## Libraries
 Several libraries have been used:
 ```python
+import csv
 import pandas as pd
 from flask import Flask, render_template, request
 ```
