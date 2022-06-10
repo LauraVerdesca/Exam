@@ -54,7 +54,7 @@ Each part has it's own classes, as stated before. In details:
 
 ## Project specification GAIA
 
-- ***part_1.py*** is connected with *part_2.py* since it imports it. 
+***part_1.py*** is connected with *part_2.py* since it imports it. 
 
 It has only one class, called <ins>*Registry*</ins>, which aims to contain all the functions calling analytical operations defined in *part_2.py* file.
 
@@ -64,7 +64,7 @@ The files are opened through **Pandas**: in this way they are transformed in two
   * Line <ins>19</ins> lists all the acronyms associated to the classes of _part_2.py_. They will be needed for _part_3.py_ and for this reason they are returned in lines <ins>24-25</ins>.
   * Each function from line <ins>27</ins> to <ins>58</ins> is associated to a specififc operation, in fact each one returns the result of the its correspective class from _part_2.py_.
  
-- ***part_2.py*** contains eleven classes:
+***part_2.py*** contains eleven classes:
   * <ins>*Metadata*</ins>: it is involved in getting general info about the dataframes, which are the number of rows and columns of each file;
   * <ins>*Semantics*</ins>: it is involved in carrying out the operation of getting the labels of the columns for each file;
   * <ins>*Genes*</ins>: it is involved in finding how many different genes are present in the second DataFrame and how many times each gene is listed;
@@ -76,7 +76,7 @@ The files are opened through **Pandas**: in this way they are transformed in two
   * <ins>*Top10*</ins>: it is involved in returning the 10 most abundant associations between genes and diseases;
   * <ins>*AssociationDisease*</ins>: it is involved in returning a list of diseases that are associated to the given gene by its symbol;
   * <ins>*AssociationGenes*</ins>: it is involved in returning a list of the genes associated to the given disease by its name.
-- ***part_3*** is connected with *part_1.py* since it imports it. Furthermore, it contains several *@app_route* decorators which intend to map the URLs to a specific function that will handle the logic for that URL. It will create fourteen pages:
+***part_3*** is connected with *part_1.py* since it imports it. Furthermore, it contains several *@app_route* decorators which intend to map the URLs to a specific function that will handle the logic for that URL. It will create fourteen pages:
   * */main*: shows the nine possible choices the user can select;
   * */MD*: shows the output of *Metadata* class;
   * */Sem*: shows the output of *Semantics* class;
@@ -91,4 +91,4 @@ The files are opened through **Pandas**: in this way they are transformed in two
   * */AD*: shows;
   * */P9*: shows;
   * */AG*: shows.
-- ***templates*** folder contains fourteen *.html* files
+***templates*** folder contains fourteen *.html* files
