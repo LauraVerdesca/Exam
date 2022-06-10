@@ -68,43 +68,48 @@ The files are opened through **Pandas**: in this way they are transformed in two
 
 It has 11 classes:
 
-  * <ins>*Metadata*</ins>:
+  * <ins>*Metadata*</ins>: <br/>
 It is involved in getting the number of rows and columns of each file.
 A specific Pandas function is used: **.shape** returns a tuple(n. rows, n. cols);
 
-  * <ins>*Semantics*</ins>: 
+  * <ins>*Semantics*</ins>: <br/>
 With this class the labels of the columns for each file are obtained. Also in this case a Pandas function is used, always because the two files are opened as two dataframes. The function is: **.columns.values** and the result is transformed into a list;
 
   * <ins>*Genes*</ins>: <br/>
 _Genes_ class is involved in finding all the different genes in the _gene_evidences.tsv_ file and how many times each one is present.
 A _gene_symbol_ list is created by exctraction of the corresponding column from the file. The dictionary is the final output where, after iteration on the list, the key is the gene and the value is the counter (hence how many time the specific gene was counted inside the list, so how many times is present in the file);
 
-  * <ins>*Pre4*</ins>: 
+  * <ins>*Pre4*</ins>: <br/>
 It is involved in listing all of the genes present in the file _gene_evidences.tsv_, in fact is very similar to the previous one and the difference is in the absence of the counter.
 After the exctraction of the "gene_symbol" column as dataframe, the Pandas function **drop_duplicates().tolist()** is used to remove repetitions.
 The aim of this function is to display the different genes of the file on the screen, in fact it is connected to the _part_3.py_;
 
-  * <ins>*SentencesG*</ins>: 
+  * <ins>*SentencesG*</ins>: <br/>
 The class is involved in working with the gene file and exctracting all the sentences involved with Covid and associated to a specific gene requested by the used from _part_3.py_.
 In line <ins>80</ins> the **loc[self.__data['gene_symbol'] == gene_symbol]** function is used in order to exctract the portion of the matrix related to the gene and then, through iteration, _covid_list_ is created;
  
-  * <ins>*Diseases*</ins>: 
+  * <ins>*Diseases*</ins>: <br/>
 The class is involved in finding all the different diseases in the _disease_evidences.tsv_ file and how many times each one is present.
 A _disease_symbol_ list is created by exctraction of the "disease name" column from the file. The dictionary is the final output where, after iteration on the list, the key is the disease and the value is its counter;
 
-  * <ins>*Pre6*</ins>: 
+  * <ins>*Pre6*</ins>: <br/>
 It is involved in listing all of the diseases present in the file _disease_evidences.tsv_; it is very similar to the _Disease_ class and the difference is in the absence of the counter.
 After the exctraction of the "diseaseid" column as dataframe, the Pandas function **drop_duplicates().tolist()** is used to remove repetitions.
 The aim of this function is to display the different diseases of the file on the screen, in fact it is connected to the _part_3.py_;
 
-  * <ins>*SentencesD*</ins>: it is involved in giving the list of all sentences associated to Covid and the specific given disease
+  * <ins>*SentencesD*</ins>: <br/>
 The class is involved in giving the list of all sentences associated to Covid and the specific disease, given by input from the user in _part_3.py_.
 In line <ins>136</ins> the **loc[self.__data['diseaseid'] == disease_id]** function is used in order to exctract the portion of the matrix related to the disease and then, through iteration, _covid_list_ is created;
 
   * <ins>*Top10*</ins>: it is involved in returning the 10 most abundant associations between genes and diseases;
  
-  * <ins>*AssociationDisease*</ins>: it is involved in returning a list of diseases that are associated to the given gene by its symbol;
-  * <ins>*AssociationGenes*</ins>: it is involved in returning a list of the genes associated to the given disease by its name.
+  * <ins>*AssociationDisease*</ins>: <br/>
+It is involved in returning a list of diseases that are associated to a gene specified by the user thanks to the link with _part_3.py_.
+By searching the gene in the sentences of the _disease_evidences.tsv_ file, when it is present then the disease name is exctracted by using the Pandas function: **loc[index_row]['disease_name']**. All the diseases are appended to the _final_list_;
+
+  * <ins>*AssociationGenes*</ins>: <br/>
+The class is involved in returning a list of the genes associated to the given disease by its name (asked by the user).
+It is the same reasoning of before: by searching the disease in the sentences of the _gene_evidences.tsv_ file, when it is present then the gene name is exctracted by using the Pandas function: **loc[index_row]['gene_symbol']**. All the genes, without repetitions, are appended to the _final_list_;
 
 
 ***part_3*** is connected with *part_1.py* since it imports it. Furthermore, it contains several *@app_route* decorators which intend to map the URLs to a specific function that will handle the logic for that URL. It will create fourteen pages:
