@@ -13,3 +13,6 @@ Each part has it's own classes, as stated before. In details:
   * <ins>Top10</ins>:;
   * <ins>AssociationDisease</ins>:;
   * <ins>AssociationGenes</ins>:;
+- ***part_3*** contains...:
+  * ggg
+  * ggg
