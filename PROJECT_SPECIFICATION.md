@@ -36,7 +36,7 @@ Each part has it's own classes, as stated before. In details:
 
 It contains only one class, called <ins>*Registry*</ins>, which aims to contain all the functions calling analytical operations defined in *part_2.py* file.
 
-The two files are opened through **Pandas**: in thsi way they are transformed in two dataframes, easily manipulated through the functions of the previously mentioned library. 
+The two files are opened through **Pandas**: in this way they are transformed in two dataframes, easily manipulated through the functions of the previously mentioned library. 
 
 - ***part_2.py*** contains eleven classes:
   * <ins>*Metadata*</ins>: it is involved in getting general info about the dataframes, which are the number of rows and columns of each file;
