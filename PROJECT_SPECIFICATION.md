@@ -109,22 +109,78 @@ By searching the gene in the sentences of the _disease_evidences.tsv_ file, when
 
   * <ins>*AssociationGenes*</ins>: <br/>
 The class is involved in returning a list of the genes associated to the given disease by its name (asked by the user).
-It is the same reasoning of before: by searching the disease in the sentences of the _gene_evidences.tsv_ file, when it is present then the gene name is exctracted by using the Pandas function: **loc[index_row]['gene_symbol']**. All the genes, without repetitions, are appended to the _final_list_;
+It is the same reasoning of before: by searching the disease in the sentences of the _gene_evidences.tsv_ file, when it is present then the gene name is exctracted by using the Pandas function: **loc[index_row]['gene_symbol']**. All the genes, without repetitions, are appended to the _final_list_.
 
 
-***part_3*** is connected with *part_1.py* since it imports it. Furthermore, it contains several *@app_route* decorators which intend to map the URLs to a specific function that will handle the logic for that URL. It will create fourteen pages:
-  * */main*: shows the nine possible choices the user can select;
-  * */MD*: shows the output of *Metadata* class;
-  * */Sem*: shows the output of *Semantics* class;
-  * */G*: shows the output of *Genes* class;
-  * */P4*: shows ;
-  * */SenG*: shows ;
-  * */D*: shows the output of *Diseases* class;
-  * */P6*: shows;
-  * */SenD*: shows;
-  * */T10*: shows the output of *Top10* class;
-  * */P8*: shows;
-  * */AD*: shows;
-  * */P9*: shows;
-  * */AG*: shows.
-***templates*** folder contains fourteen *.html* files
+***part_3*** is connected with *part_1.py* since it imports it. 
+<br/>
+Furthermore, it contains several *@app_route* decorators which intend to map the URLs to a specific function that will handle the logic for that URL. 
+It will create fourteen pages:
+
+  * */main*: <br/>
+It shows the nine possible choices the user can select;
+
+  * */MD*: <br/>
+It shows the output of *Metadata* class. This is done by returning the link from _part_1.py_ and using **render template** to connect with the correspective HTML templates. This is valid for all the pages;
+
+  * */Sem*: <br/> 
+It shows the output of *Semantics* class;
+
+  * */G*: <br/>
+It shows the output of *Genes* class;
+
+  * */P4*: <br/>
+It displays on the fourth page the list of genes from which the user has to choose;
+
+  * */SenG*: <br/>
+After taking as input the result from the previous page, the gene is authomatically sent to _SenG_, which shows the output of the class _SentencesG_;
+
+  * */D*: <br/>
+It shows the output of *Diseases* class;
+
+  * */P6*: <br/>
+It displays on the sixth page the list of diseases ID from which the user has to choose;
+
+  * */SenD*: <br/>
+After taking as input the result from the previous page, the disease is authomatically sent to _SenD_, which shows the output of the class _SentencesD_;
+
+  * */T10*: <br/>
+It shows the output of *Top10* class, so the top 10 distinct associations between genes an diseases;
+
+  * */P8*: <br/>
+It displays on the eighth page the list of genes from which the user has to choose;
+
+  * */AD*: <br/>
+After taking as input the result from the previous page, the gene is authomatically sent to _AD_, which shows the output of the class _AssociationD_;
+
+  * */P9*: <br/>
+It displays on the ninth page the list of diseases ID from which the user has to choose;
+
+  * */AG*: <br/>
+After taking as input the result from the previous page, the disease is authomatically sent to _AG_, which shows the output of the class _AssociationG_.
+
+!!! In all the cases in which the input is needed, the function used to connect everything is: **request.args.get('')** placed inside the returned function of the class from _part_2.py_.
+
+<br/>
+***templates***  folder contains fourteen *.html* files that display the outputs:
+ * <ins>*homepage.html*</ins> contains: 
+    * *Text-decoration shorthand CSS properties*: set the appearance of decorative lines on text (*head* part);
+    * *Headings*: some centered, some not (*body* part);
+    * *Buttons*: each one connects the command with a secondary page with the output or a *form* (*body* part);
+    * *Footer* with the names of the authors.
+  * <ins>*metadata.html*</ins>, <ins>*general_semantics.html*</ins>, <ins>*genes.html*</ins>, <ins>*diseases.html*</ins> and <ins>*top_ten.html*</ins> contain: 
+    * *Text-decoration shorthand CSS properties*: set the appearance of decorative lines on text (*head* part);
+    * *Headings*: some centered, some not (*body* part);
+    * *Buttons*: each one connects the secondary page with the */main* (*body* part);
+    * *Footer* with the names of the authors.
+  * <ins>*user_diseasesentences.html*</ins>, <ins>*user_genesentences.html*</ins>, <ins>*user_nine.html*</ins> and <ins>*user_usereight.html*</ins> contain: 
+    * *Text-decoration shorthand CSS properties*: set the appearance of decorative lines on text (*head* part);
+    * *Headings*: some centered, some not (*body* part);
+    * *Forms*: used to store the user input and pass it to the third page (*body* part);
+    * *Buttons*: each one connects the secondary page with the */main* (*body* part);
+    * *Footer* with the names of the authors.
+  * <ins>*association_d.html*</ins>, <ins>*association_g.html*</ins>, <ins>*sentences_d.html*</ins> and <ins>*sentences_g.html*</ins> contain: 
+    * *Text-decoration shorthand CSS properties*: set the appearance of decorative lines on text (*head* part);
+    * *Headings*: some centered, some not (*body* part);
+    * *Buttons*: some connect the third page with the */main*, others go back to the secondary page (*body* part);
+    * *Footer* with the names of the authors.
