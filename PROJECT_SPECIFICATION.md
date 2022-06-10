@@ -64,9 +64,17 @@ The files are opened through **Pandas**: in this way they are transformed in two
   * Line <ins>19</ins> lists all the acronyms associated to the classes of _part_2.py_. They will be needed for _part_3.py_ and for this reason they are returned in lines <ins>24-25</ins>.
   * Each function from line <ins>27</ins> to <ins>58</ins> is associated to a specififc operation, in fact each one returns the result of the its correspective class from _part_2.py_.
  
-***part_2.py*** contains eleven classes:
-  * <ins>*Metadata*</ins>: it is involved in getting general info about the dataframes, which are the number of rows and columns of each file;
-  * <ins>*Semantics*</ins>: it is involved in carrying out the operation of getting the labels of the columns for each file;
+***part_2.py*** 
+
+It has 11 classes:
+
+  * <ins>*Metadata*</ins>:
+It is involved in getting the number of rows and columns of each file.
+A specific Pandas function is used: **.shape** returns a tuple(n. rows, n. cols);
+
+  * <ins>*Semantics*</ins>: 
+With this class the labels of the columns for each file are obtained. Also in this case a Pandas function is used, always because the two files are opened as two dataframes. The function is: **.columns.values** and the result is transformed into a list;
+
   * <ins>*Genes*</ins>: it is involved in finding how many different genes are present in the second DataFrame and how many times each gene is listed;
   * <ins>*Pre4*</ins>: it is involved in listing all of the genes present in the file *gene_evidences.tsv*;
   * <ins>*SentencesG*</ins>: it is involved in working with the gene file and exctracting all the sentences involved with Covid and associated to a specific gene;
