@@ -114,9 +114,9 @@ After taking as input the result from the previous page, the disease is authomat
 
 <br/>
 
-- ***templates*** folder contains fourteen *.html* files that display the outputs:
-  * <ins>*homepage.html*</ins> contains: 
-    * *Text-decoration shorthand CSS properties*: set the appearance of decorative lines on text (*head* part);
+***templates*** folder contains fourteen *.html* files that display the outputs:
+- <ins>*homepage.html*</ins> contains: 
+  * *Text-decoration shorthand CSS properties*: set the appearance of decorative lines on text (*head* part);
     * *Headings*: some centered, some not (*body* part);
     * *Buttons*: each one connects the command with a secondary page with the output or a *form* (*body* part);
     * *Footer* with the names of the authors.
