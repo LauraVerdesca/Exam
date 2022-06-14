@@ -51,7 +51,7 @@ In order to run the program, make sure to have them installed. If not, we have p
 - Installing *[pandas](https://pandas.pydata.org/docs/getting_started/install.html)*.
 
 ## HTML page
-Once running the code, the homepage will be available at the following <ins>*[link](http://127.0.0.1:3000/main)*</ins>.
+Once running the *part_3.py*, the homepage will be available at the following <ins>*[link](http://127.0.0.1:3000/main)*</ins>.
 
 ## Authors
 ***Corona** Gaia, **Storari** Samuele, **Verdesca** Laura Claudia.*
