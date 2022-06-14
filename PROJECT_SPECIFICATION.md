@@ -57,6 +57,11 @@ By searching the gene in the sentences of the _disease_evidences.tsv_ file, when
 The class is involved in returning a list of the genes associated to the given disease by its name (asked by the user).
 It is the same reasoning of before: by searching the disease in the sentences of the _gene_evidences.tsv_ file, when it is present then the gene name is exctracted by using the Pandas function: **loc[index_row]['gene_symbol']**. All the genes, without repetitions, are appended to the _final_list_.
 
+**Efficiency**
+<br/>
+All the classes, except for the seventh one, have a low time complexity and they run in few seconds. 
+<br/>
+The _Top10_ problem has been resolved with an _exhaustive search_ approach, meanining that we explored both the datasets in order to find the best solution. In this way we prioritized the optimality of the solution in spite of the time effeciency. For this reason we already saved the output and assigned it to a variable. So when the user clicks on the seventh class of the Web UI, what will appear on the screen is the saved output and not the actual class running. Still the class works but the running time is about 14 hours.
 
 ***part_3*** is connected with *part_1.py* since it imports it. 
 <br/>
