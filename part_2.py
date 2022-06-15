@@ -160,23 +160,30 @@ class TopTen:
 		
 		col2 = self.__data1['sentence'].tolist() # "sentence" column in data1
 
-		for idd in list_genes:
-			for row in col2:
-				if idd in row:
-					index = col2.index(row)
-					disease_name = self.__data1.loc[index]['disease_name'] # associated gene_symbol
-
-					association = (idd, disease_name) # association (gene_id, disease_id )= key name
-					
-					if association not in dict_association.keys():
-						dict_association[association] = 1  # if association is not present, create it
-					else:
-						dict_association[association] += 1
-					
-		sorted_dict = sorted(dict_association.items(), key=lambda kv: kv[1], reverse=True)
-		print(sorted_dict)
-		top10 = list(sorted_dict)[0:9]
-		print(top10)
+		#for idd in list_genes:
+		#	for row in col2:
+		#		if idd in row:
+		#			index = col2.index(row)
+		#			disease_name = self.__data1.loc[index]['disease_name'] # associated gene_symbol
+		#
+		#			association = (idd, disease_name) # association (gene_id, disease_id )= key name
+		#			
+		#			if association not in dict_association.keys():
+		#				dict_association[association] = 1  # if association is not present, create it
+		#			else:
+		#				dict_association[association] += 1
+		#			
+		#sorted_dict = sorted(dict_association.items(), key=lambda kv: kv[1], reverse=True)
+	
+		#top10 = list(sorted_dict)[0:10] # take first ten as a list
+		
+		top10 = [(('SEA', 'Coronavirus Disease 2019'), 161521), (('S', 'Coronavirus Disease 2019'), 161521), 
+			 (('E', 'Coronavirus Disease 2019'), 161521), (('N', 'Coronavirus Disease 2019'), 161521), (('S', 'SARS-CoV-2'), 50302), 
+			 (('N', 'SARS-CoV-2'), 50302), (('AR', 'SARS-CoV-2'), 46759), (('E', 'SARS-CoV-2'), 27688), (('SEA', 'SARS-CoV-2'), 23125), 
+			 (('M', 'Coronavirus Disease 2019'), 21647)]
+		return top10
+		
+		
 
 #class_8
 class AssociationDisease:
