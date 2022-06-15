@@ -52,7 +52,7 @@ It is involved in returning the 10 most abundant associations between genes and 
 The idea behind the algorithm choosen to solve this problem is to search in the domain of the solution (hence all the possible combinations/associations between diseases and genes, which is indeed the search space) in order to get at the end the top10 most abundant ones.
 All the genes have been exctracted from the file _gene_evidences.tsv_ as alist without duplicates through the Pandas function **drop_duplicates().tolist()**. <br/>
 To save all the associations, a dictionary is used: _dict_association_. The keys are the associations and the values are counters.
-The reasoning is: while doing a double for loop to analyse every gene in the _list_genes_ and the column of the _sentences_ in the _disease_eviences.tsv_ file, <ins>if<ins/> the gene is present in the sentence, then the disease associated to the sentence is taken and the key of the dictionary is created. 
+The reasoning is: while doing a double for loop to analyse every gene in the _list_genes_ and the column of the _sentences_ in the _disease_eviences.tsv_ file, <ins>if<</ins> the gene is present in the sentence, then the disease associated to the sentence is taken and the key of the dictionary is created. 
 Every time a key is already present, the counter increases, otherwise it is created. <br/>
 After obtaining the dictionary, it is sorted in order to put everything in discending order with **sorted(dict_association.items(), key=lambda kv: kv[1], reverse=True)** and the first ten elements are sliced and given as result. <br/>
 Due to the high time complexity, the iteration is commented and the output (**top10**) is already given.
