@@ -1,6 +1,6 @@
 # Project
 ##### Advanced Programming 2021/2022
-![Alt description of image](https://www.cloverdx.com/hubfs/david-clode-PsqJlaAlvXk-unsplash__1618841662_5.81.219.59.jpg) 
+<img width="1071" alt="Schermata 2022-06-15 alle 21 20 15" src="https://user-images.githubusercontent.com/106587485/173908545-e0358aa7-2662-48af-9adc-8eb2462855ab.png">
 
 ## Specification
 The project consists in a three *.py* files, each one containing a different parts:
