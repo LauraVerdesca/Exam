@@ -1,6 +1,6 @@
 # Project
 ##### Advanced Programming 2021/2022
-<img width="1071" alt="Schermata 2022-06-15 alle 21 20 15" src="https://user-images.githubusercontent.com/106587485/173908545-e0358aa7-2662-48af-9adc-8eb2462855ab.png">
+<img width="1014" alt="Schermata 2022-06-15 alle 21 20 15" src="https://user-images.githubusercontent.com/106587485/173909765-9e8e83e9-b1e8-45c4-92ad-32ccb31c4ec0.png">
 
 ## Specification
 The project consists in a three *.py* files, each one containing a different parts:
