@@ -81,8 +81,8 @@ class SentencesG:
 		covid_list = []
 		sentences_col = sliced_data2['sentence'].tolist()
 		for sentence in sentences_col:
-			if 'COVID19'or 'SARS-CoV2'or 'COVID-19' or 'covid' or 'coronavirus' in sentence:
-				covid_list.append(sentence)
+			if ("<span class='disease covid cdisease'" in sentence) or ("<span class='disease covid cvirus'" in sentence)::
+					covid_list.append(sentence)
 		return covid_list
 
 
@@ -137,7 +137,7 @@ class SentencesD:
 		covid_list = []
 		sentences_col = sliced_data1['sentence'].tolist()
 		for sentence in sentences_col:
-			if 'COVID19'or 'SARS-CoV2'or 'COVID-19' or 'covid' or 'coronavirus' in sentence:
+			if "<span class='disease covid cdisease'" in sentence:
 				covid_list.append(sentence)
 
 		return covid_list
