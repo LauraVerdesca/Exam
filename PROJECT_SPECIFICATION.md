@@ -44,7 +44,7 @@ After the exctraction of the "diseaseid" column as dataframe, the Pandas functio
 The aim of this function is to display the different diseases of the file on the screen, in fact it is connected to the _part_3.py_;
 
   * <ins>*SentencesD*</ins>: <br/>
-The class is involved in giving the list of all sentences associated to Covid and the specific disease, given by input from the user in _part_3.py_.
+The class is involved in giving the list of all sentences associated to Covid and the specific disease, given by input from the user.
 In line <ins>136</ins> the **loc[self.__data['diseaseid'] == disease_id]** function is used in order to exctract the portion of the matrix related to the disease and then, through iteration, _covid_list_ is created;
 
   * <ins>*Top10*</ins>: <br/>
