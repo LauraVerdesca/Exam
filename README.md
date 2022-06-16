@@ -29,7 +29,7 @@ We have provided a folder with CRC cards explaining each class built in _part_2.
 ## UML diagrams
 We have provided a folder with an UML diagram explaining the connections between the classes built in _part_2.py_:
 - _DiagramProject.jpg_ is an image representing the UML diagram created with **Visual Paradigm**.
-- _UMLproject_final.vpp_ is the equivalent of _Class Diagram1.jpg_ but in format _.vpp_.
+- _UMLproject_final.vpp_ is the equivalent of _DiagramProject.jpg_ but in format _.vpp_.
 
 ## Templates 
 It is a folder with several <ins>templates</ins> used in order to implement the file ***part_3.py*** to create an HTML web page.
