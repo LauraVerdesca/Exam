@@ -131,18 +131,18 @@ After taking as input the result from the previous page, the disease is authomat
 - <ins>*metadata.html*</ins>, <ins>*general_semantics.html*</ins>, <ins>*genes.html*</ins>, <ins>*diseases.html*</ins> and <ins>*top_ten.html*</ins> contain: 
   * *Text-decoration shorthand CSS properties*: set the appearance of decorative lines on text (*head* part);
   * *Headings*: some centered, some not (*body* part);
-  * *Buttons*: each one connects the secondary page with the */main* (*body* part);
+  * *Buttons*: each one connects the secondary page with the */* (*body* part);
   * *Footer* with the names of the authors.
 - <ins>*user_diseasesentences.html*</ins>, <ins>*user_genesentences.html*</ins>, <ins>*user_nine.html*</ins> and <ins>*user_usereight.html*</ins> contain: 
   * *Text-decoration shorthand CSS properties*: set the appearance of decorative lines on text (*head* part);
   * *Headings*: some centered, some not (*body* part);
   * *Forms*: used to store the user input and pass it to the third page (*body* part);
-  * *Buttons*: each one connects the secondary page with the */main* (*body* part)
+  * *Buttons*: each one connects the secondary page with the */* (*body* part)
   * *Footer* with the names of the authors.
 - <ins>*association_d.html*</ins>, <ins>*association_g.html*</ins>, <ins>*sentences_d.html*</ins> and <ins>*sentences_g.html*</ins> contain: 
   * *Text-decoration shorthand CSS properties*: set the appearance of decorative lines on text (*head* part);
   * *Headings*: some centered, some not (*body* part);
-  * *Buttons*: some connect the third page with the */main*, others go back to the secondary page (*body* part);
+  * *Buttons*: some connect the third page with the */*, others go back to the secondary page (*body* part);
   * *Footer* with the names of the authors.
 
 
