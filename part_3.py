@@ -5,7 +5,7 @@ from part_1 import Registry
 
 app = Flask(__name__)
 
-@app.route('/main')
+@app.route('/')
 def index_page():
 	r = Registry().registry()  # guides the program to the correct output
 	l = Registry().links()
