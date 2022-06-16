@@ -28,10 +28,14 @@
             <body>
                 <center><font class="under" face="Garamond" size="5" style="color:#151415;">Given the selected gene symbol, this is the list of diseases that are associated to that gene</font></center></br>
     <ul>
+    {% if result == [] %} 
+    <p> There are no genes associated to the designated disease. Please select another one. </p> 
+    {% else %}
     {% for sentence in result %}
     <li>{{sentence}}</li>
     <p></p>
     {% endfor %}
+    {% endif %}
     </ul></br>
     
     <form method="get" action="/">
