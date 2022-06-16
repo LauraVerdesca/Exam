@@ -28,12 +28,16 @@
             <body>
                 <center><font class="under" face="Garamond" size="5" style="color:#151415;">Given the selected disease symbol, this is the list of sentences that are an evidence in literature about the relation of this disease with COVID-19.</font></center></br>
 
+    {% if result == [] %} 
+	<font face="Garamond" size="4" style="color:#151415;"> There is no association in literature between this disease and COVID19. Please select another one. </font><br></br> 
+    {% else %}
     {% for sentence in result %}
-	<li><font face="Garamond" size="4" style="color:#151415;">{{sentence}}</font></li>
+    <li><font face="Garamond" size="4" style="color:#151415;">{{sentence}}</font></li>
     <p></p>
     {% endfor %}
+    {% endif %}
+
     <br></br>
-    
     <form method="get" action="/">
         <button class="button" type="submit">Main</button>
     </form></br>
