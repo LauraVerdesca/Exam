@@ -24,7 +24,7 @@ The project consists in a three *.py* files, each one containing a different par
 
 
 ## CRC Cards
-We have provided a folder with CRC cards explaining each class built in _part_2.py_.
+We have provided a folder with CRC cards explaining each class built in _part_2.py_, each CRC card has been created with **Visual Paradigm**.
 
 ## UML diagrams
 We have provided a folder with an UML diagram explaining the connections between the classes built in _part_2.py_:
