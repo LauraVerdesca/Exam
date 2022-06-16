@@ -73,7 +73,7 @@ The _Top10_ problem has been resolved with an _exhaustive search_ approach, mean
 <br/>
 <br/>
 
-***part_3*** is connected with *part_1.py* since it imports it. 
+***part_3.py*** is connected with *part_1.py* since it imports it. 
 <br/>
 Furthermore, it contains several *@app_route* decorators which intend to map the URLs to a specific function that will handle the logic for that URL. 
 It will create fourteen pages:
