@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html style="background-color: #D9FCE4;">
+            <head>
+                <style>
+                    .under {text-decoration: underline #151415;}
+                    .over {text-decoration: wavy overline lime;}
+                    .line {text-decoration: line-through;}
+                    .plain {text-decoration: none;}
+                    .underover {text-decoration: dashed underline overline;}
+                    .thick {text-decoration: solid underline purple 4px;}
+                    .blink {text-decoration: blink;}
+                    .button {
+                        display: inline-block;
+                        padding: 5px 10px;
+                        font-size: 20px;
+                        cursor: pointer;
+                        text-align: center;
+                        text-decoration: none;
+                        outline: none;
+                        color: #fff;
+                        background-color: #4CAF50;
+                        border: none;
+                        border-radius: 15px;
+                        box-shadow: 0 9px #999;
+                        }
+                    .button:hover {background-color: #3e8e41}
+                    .button:active {
+                        background-color: #3e8e41;
+                        box-shadow: 0 5px #666;
+                        transform: translateY(4px);
+                </style>
+            </head>
+           
+            <body>
+                <center><font face="Garamond" size="5" class='under' style="color:#151415;">Final project Advanced Programming - a.y. 2021/22</font></center></br>
+                <center><font face="Garamond" size="4" style="color:#5E5E5E;">Welcome to our project's web page.</font></center><br></br>
+                <font class="under" face="Garamond" size="4" style="color:#151415;">Choose a command:</font>
+                <ol type="1"><li><font face="Garamond" size="3" class="first_page">Recording the numerical metadata consisting of the number of rows and columns of each of the two files composing the data collection.</font></li></br>
+                <form method="get" action="/MD">
+                    <button class="button" type="submit" class="first_page">Class 1</button>
+                </form><br></br>
+                <li><font face="Garamond" size="3" class="second_page">Recording the general semantics of the dataset, i.e. the labels of the columns of each of the two files composing the data collection.</font></li></br>
+                <form method="get" action="/Sem">
+                    <button class="button" type="submit" class="second_page">Class 2</button>
+                </form><br></br>
+                <li><font face="Garamond" size="3" class="third_page">Recording the number of different genes detected in literature. The list should be sorted in ascending order.</font></li></br>
+                <form method="get" action="/G">
+                    <button class="button" type="submit" class="third_page">Class 3</button>
+                </form><br></br>
+                <li><font class="fourthuser_page">Given a gene symbol, provide the list of sentences that are an evidence in literature about the relation of this gene with COVID-19.</font></li></br>
+                <form method="get" action="/P4">
+                    <button class="button" type="submit" class="fourthuser_page">Class 4</button>
+                </form><br></br>
+                <li><font face="Garamond" size="3" class="fifth_page">Recording the number of different disease detected in literature. The list should be sorted in ascending order.</font></li></br>
+                <form method="get" action="/D">
+                    <button class="button" type="submit" class="fifth_page">Class 5</button>
+                </form><br></br>
+                <li><font class="sixthuser_page">Given a disease ID, provide the list of sentences that are an evidence in literature about the relation of this disease with COVID-19.</font></li></br>
+                <form method="get" action="/P6">
+                    <button class="button" type="submit" class="sixthuser_page">Class 6</button>
+                </form><br></br>
+                <li><font face="Garamond" size="3" class="seventh_page">Recording the 10-top most frequent distinct association between genes and diseases.</font></li></br>
+                <form method="get" action="/T10">
+                    <button class="button" type="submit" class="seventh_page">Class 7</button>
+                </form><br></br>
+                <li><font class="eighthuser_page">Given a gene symbol, provide the list of diseases such a gene is associated with.</font></li></br>
+               <form method="get" action="/P8">
+                   <button class="button" type="submit" class="eighthuser_page">Class 8</button>
+               </form><br></br>
+               <li><font face="Garamond" size="3" class="ninthuser_page">Given a disease ID, provide the list of genes such a disease is associated with.</font></li></br>
+               <form method="get" action="/P9">
+                <button class="button" type="submit" class="ninthuser_page">Class 9</button>
+               </form><br></br>
+
+<br></br>
+<center><footer>
+  <p>Powered by Corona Gaia, Storari Samuele and Verdesca Laura Claudia</p>
+</footer></center>
+
+</body>
+</html>
