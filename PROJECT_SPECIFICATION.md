@@ -31,7 +31,7 @@ After the exctraction of the "gene_symbol" column as dataframe, the Pandas funct
 The aim of this function is to display the different genes of the file on the screen, in fact it is connected to the _part_3.py_;
 
   * <ins>*SentencesG*</ins>: <br/>
-The class is involved in working with the gene file and exctracting all the sentences involved with Covid and associated to a specific gene requested by the user from _part_3.py_.
+The class is involved in working with the gene file and exctracting all the sentences involved with Covid and associated to a specific gene requested by the user.
 In line <ins>80</ins> the **loc[self.__data['gene_symbol'] == gene_symbol]** function is used in order to exctract the portion of the matrix related to the gene and then, through iteration, _covid_list_ is created;
  
   * <ins>*Diseases*</ins>: <br/>
