@@ -76,7 +76,7 @@ The _Top10_ problem has been resolved with an _exhaustive search_ approach, mean
 Furthermore, it contains several *@app_route* decorators which intend to map the URLs to a specific function that will handle the logic for that URL. 
 It will create fourteen pages:
 
-  * */main*: <br/>
+  * */*: <br/>
 It shows the nine possible choices the user can select;
 
   * */MD*: <br/>
