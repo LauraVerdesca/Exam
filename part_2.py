@@ -177,10 +177,10 @@ class TopTen:
 	
 		#top10 = list(sorted_dict)[0:10] # take first ten as a list
 		
-		top10 = [(('SEA', 'Coronavirus Disease 2019'), 161521), (('S', 'Coronavirus Disease 2019'), 161521), 
-			 (('E', 'Coronavirus Disease 2019'), 161521), (('N', 'Coronavirus Disease 2019'), 161521), (('S', 'SARS-CoV-2'), 50302), 
-			 (('N', 'SARS-CoV-2'), 50302), (('AR', 'SARS-CoV-2'), 46759), (('E', 'SARS-CoV-2'), 27688), (('SEA', 'SARS-CoV-2'), 23125), 
-			 (('M', 'Coronavirus Disease 2019'), 21647)]
+		top10 = [(('N', 'Coronavirus Disease 2019'), 211823), (('S', 'Coronavirus Disease 2019'), 211823), (('E', 'Coronavirus Disease 2019'), 189209), 
+			 (('SEA', 'Coronavirus Disease 2019'), 184646), (('AR', 'SARS-CoV-2'), 58203), 
+			 (('M', 'Coronavirus Disease 2019'), 28706), (('C3', 'Coronavirus Disease 2019'), 17235), (('S', 'Anxiety'), 5161), (('E', 'Anxiety'), 4176), 
+			 (('N', 'Anxiety'), 4033)]
 		return top10
 		
 		
